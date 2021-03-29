@@ -1,0 +1,3 @@
+__pycache__/
+env/
+secret_key.txt
