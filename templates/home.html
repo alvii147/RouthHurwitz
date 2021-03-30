@@ -4,8 +4,8 @@
 {% endblock %}
 {% block content %}
 <h1 class = "display-4">Routh-Hurwitz Table Generator</h4>
-<p class = "h5">Enter your polynomial coefficients separated by comma (,)</p>
-<form action = "#" method = "POST">
+<p class = "h5">Enter your polynomial coefficients separated by comma ( , )</p>
+<form action = "" method = "POST">
     <input style = "color: black;" type = "text" id = "polynomialInput" name = "polynomialInput" onkeyup = "updatePolynomial()">
     <button class = "blueButton" type = "submit">Go</button>
 </form>
@@ -29,12 +29,16 @@
         var expr = '';
 
         for(var i = 1; i < polyList.length; i++) {
-            polyStr += ' + ';
             str_is_nan = isNaN(polyList[i].toString());
-
             if(str_is_nan) {
                 polyStr += '('
             }
+            else {
+                if(parseInt(polyList[i]) >= 0) {
+                    polyStr += ' + '
+                }
+            }
+
             polyStr += polyList[i].toString();
             if(str_is_nan) {
                 polyStr += ')'
@@ -49,7 +53,7 @@
             polyStr += expr;
         }
 
-        polyStr = '$$' + polyStr + '$$';
+        polyStr = '$$\\Large ' + polyStr + '$$';
         polynomialHeader.innerText = `${polyStr}`;
         MathJax.typeset();
     }

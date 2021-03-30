@@ -4,32 +4,18 @@
 {% endblock %}
 {% block content %}
 <h1 class="display-4">Routh-Hurwitz Table Generator</h4>
-<figure>
-    <table class = "table table-sm table-hover table-bordered">
+<div class = "container">
+    <table class = "table-hover">
         {% for i in range(routhArr|count) %}
-            {% if i == 0 or i == 1 %}
-                <thead class = "thead-light">
-                    <tr>
-                        {% for element in routhArr[i] %}
-                            <th>
-                                {{element}}
-                            </th>
-                        {% endfor %}
-                    </tr>
-                </thead>
-            {% else %}
-                <tbody>
-                    <tr>
-                        {% for element in routhArr[i] %}
-                            <td>
-                                {{element}}
-                            </td>
-                        {% endfor %}
-                    </tr>
-                </tbody>
-            {% endif %}
+            <tbody>
+                <tr>
+                    {% for element in routhArr[i] %}
+                        <td><strong>{{element}}</strong></td>
+                    {% endfor %}
+                </tr>
+            </tbody>
         {% endfor %}
     </table>
-</figure>
+</div>
 {% endblock %}
 {% block src %}{% endblock %}
