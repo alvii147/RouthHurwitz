@@ -1,1 +1,1 @@
-web: gunicorn RouthHurwitz:app
+web: gunicorn RouthHurwitzWeb:app
