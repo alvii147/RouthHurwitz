@@ -91,12 +91,7 @@ with col2:
     )
     pcrf_url = 'https://www.pcrf.net'
 
-    st.image(github_shields_url)
-    st.image(license_shields_url)
-    st.image(linkedin_shields_url)
-    st.image(pcrf_shields_url)
-
-    # st.write(f'[![GitHub Stars]({github_shields_url})]({github_url})')
-    # st.write(f'[![License]({license_shields_url})]({license_url})')
-    # st.write(f'[![LinkedIn]({linkedin_shields_url})]({linkedin_url})')
-    # st.write(f'[![PCRF]({pcrf_shields_url})]({pcrf_url})')
+    st.write(f'[![GitHub Stars]({github_shields_url})]({github_url})')
+    st.write(f'[![License]({license_shields_url})]({license_url})')
+    st.write(f'[![LinkedIn]({linkedin_shields_url})]({linkedin_url})')
+    st.write(f'[![PCRF]({pcrf_shields_url})]({pcrf_url})')
