@@ -1,39 +1,51 @@
 # Routh-Hurwitz Table Generator
 
-The [Routh-Hurwitz Stability Criterion](https://en.wikipedia.org/wiki/Routh%E2%80%93Hurwitz_stability_criterion) states that any system can be stable if and only if all the roots of the second column have the same sign. The number of sign changes in the second column of the Routh-Hurwitz table is equal to the number of roots of the characteristic equation in the closed right half of the complex plane.
+<p align="center">
+    <img alt="Logo" src="img/logo.png" width=350 />
+</p>
 
-You can try out this tool without installation [here.](https://routhhurwitz.herokuapp.com/)
+<p align="center">
+    The <a href="https://en.wikipedia.org/wiki/Routh%E2%80%93Hurwitz_stability_criterion">Routh-Hurwitz Stability Criterion</a> states that any system can be stable if and only if all the roots of the second column have the same sign. The number of sign changes in the second column of the Routh-Hurwitz table is equal to the number of roots of the characteristic equation in the closed right half of the complex plane.
+</p>
+
+## Try it out
+
+You can try out this tool without installation [here.](https://routhhurwitz.streamlit.app/)
 
 ## Installation
 
-Clone the repository and install the requirements from `requirements.txt` (Installation can be done inside a [virtualenv](https://docs.python.org/3/library/venv.html)):
+### :one: Install Python 3.12+
 
-```
-pip install requirements.txt
+Installation process may vary depending on OS. Refer to [this article](https://realpython.com/installing-python/) for installation instructions for your OS.
+
+### :two: Install Dependencies
+
+Install dependencies from `requirements.txt`:
+
+```bash
+pip3 install -r requirements.txt
 ```
 
-Run the [Flask](https://flask.palletsprojects.com/en/1.1.x/) server:
+### :three: Run the App
 
-```
-python3 RouthHurwitzWeb.py
+Run the app using the following command:
+
+```bash
+streamlit run app.py
 ```
 
-The server should then be live at `http://localhost:5000/`.
+The app should then be running on `http://localhost:8501`.
 
 ## Usage
 
-Enter the coefficients of the polynomial, in ascending order of degree, separated by commas.
+Enter the coefficients of the polynomial, in ascending order of degree, separated by commas:
 
-![Polynomial entry screenshot](img/PolynomialEntry.png)
+![Polynomial](img/polynomial.png)
 
-Hit "Go". This should generate a Routh-Hurwitz table. The number of sign changes along the second column represents the number of unstable roots (i.e roots with strictly positive real parts).
+Hit `Go`. This should generate a Routh-Hurwitz table. The number of sign changes along the second column represents the number of unstable roots (i.e roots with strictly positive real parts):
 
-![Routh Hurwitz table screenshot](img/Table.png)
+![Routh Hurwitz Table](img/table.png)
 
-Add alphabets as variables in the coefficients.
+Add alphabets as variables in the coefficients. The tool will leave answers simplified in terms of the given variables:
 
-![Polynomial entry screenshot](img/PolynomialEntryWithVariables.png)
-
-The tool will leave answers simplified in terms of the given variables.
-
-![Routh Hurwitz table screenshot](img/TableWithVariables.png)
+![Routh Hurwitz Table with Variables](img/table_with_variables.png)
