@@ -8,6 +8,7 @@ from routh_hurwitz import (
 
 st.set_page_config(
     page_title='Routh-Hurwitz Table Generator',
+    page_icon='https://github.com/alvii147/RouthHurwitz/raw/main/img/logo.svg',
     layout='wide',
 )
 
