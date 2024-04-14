@@ -1,11 +1,11 @@
+<p align="center">
+    <img alt="Logo" src="img/logo.png" width=250 />
+</p>
+
 # Routh-Hurwitz Table Generator
 
 <p align="center">
-    <img alt="Logo" src="img/logo.png" width=350 />
-</p>
-
-<p align="center">
-    The <a href="https://en.wikipedia.org/wiki/Routh%E2%80%93Hurwitz_stability_criterion">Routh-Hurwitz Stability Criterion</a> states that any system can be stable if and only if all the roots of the second column have the same sign. The number of sign changes in the second column of the Routh-Hurwitz table is equal to the number of roots of the characteristic equation in the closed right half of the complex plane.
+    <i>The <strong><a href="https://en.wikipedia.org/wiki/Routh%E2%80%93Hurwitz_stability_criterion">Routh-Hurwitz Stability Criterion</a></strong> states that any system can be stable if and only if all the roots of the second column have the same sign. The number of sign changes in the second column of the Routh-Hurwitz table is equal to the number of roots of the characteristic equation in the closed right half of the complex plane.</i>
 </p>
 
 ## Try it out
