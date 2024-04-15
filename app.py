@@ -15,7 +15,7 @@ st.set_page_config(
 _, col1, _, col2, _ = st.columns([1, 3, 1, 1, 1])
 
 with col1:
-    st.write('# Routh-Hurwitz Table Generator')
+    st.header('Routh-Hurwitz Table Generator', divider=True)
     st.write('### Polynomial')
 
     polynomial_coeffs = st.text_input(
