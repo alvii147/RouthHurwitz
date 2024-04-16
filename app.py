@@ -1,5 +1,5 @@
 import streamlit as st
-from routh_hurwitz import (
+from routhhurwitz import (
     display_table,
     display_polynomial,
     generate_table,
