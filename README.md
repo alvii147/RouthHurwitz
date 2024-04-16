@@ -56,5 +56,5 @@ Add alphabets as variables in the coefficients. The tool will leave answers simp
 --- | --- | --- | --- | ---
 Deployed Publicly | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
 Unlimited Polynomial Degree | :x: | :white_check_mark: | :white_check_mark: | :white_check_mark:
-Programmatical Use | :x: | :x: | :x: | :x: | :white_check_mark:
-Works with Variables | :x: | :x: | :x: | :x: | :white_check_mark:
+Programmatical Use | :x: | :x: | :x: | :white_check_mark:
+Works with Variables | :x: | :x: | :x: | :white_check_mark:
