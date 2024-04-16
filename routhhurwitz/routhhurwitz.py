@@ -63,7 +63,7 @@ def display_polynomial(polynomial: Expr) -> str:
 
     return latex(polynomial)
 
-def get_polynomial(coeffs: list[int]) -> Expr:
+def get_polynomial(coeffs: list[str]) -> Expr:
     """
     Get expression from polynomial coefficients.
     """
