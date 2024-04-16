@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "routhhurwitz"
+version = "0.1.0"
+description = "App for generating Routh-Hurwitz table"
+authors = ["Zahin Zaman <alvii147@gmail.com>"]
+license = "BSD-3-Clause"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "^1.26.4"
+sympy = "^1.12"
+streamlit = "^1.33.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -70,7 +70,12 @@ def get_polynomial(coeffs: list[int]) -> Expr:
 
     return Poly(reversed(coeffs), symbols('s')).as_expr()
 
-def generate_table(polynomial: list[int]) -> npt.NDArray:
+def generate_table(polynomial: list[str]) -> npt.NDArray:
+    """
+    Generate Routh Hurwitz table from list of expressions representing polynomial
+    coefficients.
+    """
+
     degree = len(polynomial) - 1
     n_rows = degree + 1
     n_cols = math.ceil((degree + 1) / 2) + 1
@@ -78,12 +83,12 @@ def generate_table(polynomial: list[int]) -> npt.NDArray:
 
     table[0, 0] = get_expr(f's ** {degree}')
     for c, coeff_idx in enumerate(range(degree, -1, -2), start=1):
-        table[0, c] = get_expr(str(polynomial[coeff_idx]))
+        table[0, c] = get_expr(polynomial[coeff_idx])
 
     table[1, 0] = get_expr(f's ** {degree - 1}')
 
     for c, coeff_idx in enumerate(range(degree - 1, -1, -2), start=1):
-        table[1, c] = get_expr(str(polynomial[coeff_idx]))
+        table[1, c] = get_expr(polynomial[coeff_idx])
 
     for r, exp in enumerate(range(degree - 2, -1, -1), start=2):
         table[r, 0] = get_expr(f's ** {exp}')
