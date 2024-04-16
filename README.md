@@ -49,3 +49,9 @@ Hit `Go`. This should generate a Routh-Hurwitz table. The number of sign changes
 Add alphabets as variables in the coefficients. The tool will leave answers simplified in terms of the given variables:
 
 ![Routh Hurwitz Table with Variables](img/table_with_variables.png)
+
+## Comparing Alternatives
+
+&nbsp; | [FSXAC/RHCalc](https://github.com/FSXAC/RHCalc) | [crclayton/routh-hurwitz-calc](https://github.com/crclayton/routh-hurwitz-calc) | [mohamedhassan279/Routh-Hurwitz-stability](https://github.com/mohamedhassan279/Routh-Hurwitz-stability) | [alvii147/RouthHurwitz](https://github.com/alvii147/RouthHurwitz)
+--- | --- | --- | --- | ---
+Deployed publicly | 
