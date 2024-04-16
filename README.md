@@ -18,15 +18,19 @@ You can try out this tool without installation [here.](https://routhhurwitz.stre
 
 Installation process may vary depending on OS. Refer to [this article](https://realpython.com/installing-python/) for installation instructions for your OS.
 
-### :two: Install Dependencies
+### :two: Install Poetry
 
-Install dependencies from `requirements.txt`:
+Install [Poetry package manager](https://python-poetry.org/). Installation process may vary depending on OS.
+
+### :three: Install Dependencies
+
+Install dependencies:
 
 ```bash
-pip3 install -r requirements.txt
+poetry install
 ```
 
-### :three: Run the App
+### :four: Run the App
 
 Run the app using the following command:
 
