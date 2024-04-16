@@ -54,4 +54,7 @@ Add alphabets as variables in the coefficients. The tool will leave answers simp
 
 &nbsp; | [FSXAC/RHCalc](https://github.com/FSXAC/RHCalc) | [crclayton/routh-hurwitz-calc](https://github.com/crclayton/routh-hurwitz-calc) | [mohamedhassan279/Routh-Hurwitz-stability](https://github.com/mohamedhassan279/Routh-Hurwitz-stability) | [alvii147/RouthHurwitz](https://github.com/alvii147/RouthHurwitz)
 --- | --- | --- | --- | ---
-Deployed publicly | 
+Deployed Publicly | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
+Unlimited Polynomial Degree | :x: | :white_check_mark: | :white_check_mark: | :white_check_mark:
+Programmatical Use | :x: | :x: | :x: | :x: | :white_check_mark:
+Works with Variables | :x: | :x: | :x: | :x: | :white_check_mark:
