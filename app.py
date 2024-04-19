@@ -55,13 +55,16 @@ with col2:
         'https://en.wikipedia.org/wiki/Routh%E2%80%93Hurwitz_stability_criterion'
     )
 
-    st.write('#### Routh-Hurwitz Stability Criterion')
     st.write(
-        f'The [Routh-Hurwitz Stability Criterion]({wikipedia_link}) states that '
-        'any system can be stable if and only if all the roots of the second '
-        'column have the same sign. The number of sign changes in the second '
-        'column of the Routh-Hurwitz table is equal to the number of roots of '
-        'the characteristic equation in the closed right half of the complex '
+        '**Routh-Hurwitz Table Generator** will generate the Routh-Hurwitz '
+        'table for you for any given polynomial.'
+    )
+    st.write(
+        f'The **[Routh-Hurwitz Stability Criterion]({wikipedia_link})** states '
+        'that any system can be stable if and only if all the roots of the '
+        'second column have the same sign. The number of sign changes in the '
+        'second column of the Routh-Hurwitz table is equal to the number of roots '
+        'of the characteristic equation in the closed right half of the complex '
         'plane.'
     )
 
