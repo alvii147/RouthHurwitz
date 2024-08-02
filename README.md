@@ -1,6 +1,4 @@
-<p align="center">
-    <img alt="Logo" src="img/logo.png" width=250 />
-</p>
+[![All Eyes On Bangladesh](https://github.com/alvii147/peoples-banner-for-bangladesh/blob/main/github/banner-black.svg)](https://www.aljazeera.com/program/newsfeed/2024/7/24/bangladeshs-deadly-protests-explained)
 
 # Routh-Hurwitz Table Generator
 
